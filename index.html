@@ -796,6 +796,55 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+		
+		        // Contact form handling — submits to Formspree without leaving the page
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop the page from redirecting
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Show "Sending..." state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="animate-pulse">Sending...</span>';
+
+            // Collect form data
+            const formData = new FormData(contactForm);
+
+            // Send to Formspree via AJAX
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success: show green message inside the site
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    formSuccess.classList.remove('hidden');
+                    contactForm.reset();
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formSuccess.classList.add('hidden');
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                // Error handling
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                alert('Oops! Something went wrong. Please try again or email me directly.');
+            });
+        });
         
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
