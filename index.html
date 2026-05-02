@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCD67TKVE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-8NCD67TKVE');
-</script>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Prashant Ranjan | SQL Expert & Data Engineer | Optimize Queries & Fix Data Issues</title>
-    <meta name="description" content="Freelance Data Engineer and SQL Expert specializing in SQL optimization, PostgreSQL debugging, data cleaning, and database performance tuning. Fast, cost-effective solutions.">
-    <meta name="keywords" content="SQL optimization, PostgreSQL expert, data engineer freelance, fix slow queries, database performance, SQL query tuning, data cleaning, ETL pipelines, PostgreSQL debugging">
+    <title>Prashant Ranjan | Senior Data Engineer & AWS Cloud Specialist</title>
+    <meta name="description" content="Prashant Ranjan - Senior Data Engineer with 10+ years of experience in AWS Cloud, PySpark, PostgreSQL, Python, ETL/ELT pipelines, Databricks, and Terraform. Available for freelance data engineering projects.">
+    <meta name="keywords" content="Prashant Ranjan, Data Engineer, AWS Cloud Specialist, PySpark, PostgreSQL, Python, SQL, ETL Pipeline, Terraform, Databricks, Data Analysis, Freelance Data Engineer, India">
     <meta name="author" content="Prashant Ranjan">
-    <meta property="og:title" content="SQL Expert & Data Engineer | Optimize Queries & Fix Data Issues">
-    <meta property="og:description" content="I help businesses improve database performance, fix slow queries, and clean messy data using SQL, PostgreSQL, and Python.">
+    <meta property="og:title" content="Prashant Ranjan | Senior Data Engineer & AWS Cloud Specialist">
+    <meta property="og:description" content="10+ years of experience in Data Analysis, AWS Cloud Solutions, and Software Engineering. Specializing in ETL/ELT pipelines, SQL optimization, and cloud infrastructure.">
     <meta property="og:type" content="website">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCD67TKVE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8NCD67TKVE');
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <script>
@@ -46,14 +47,18 @@
                             800: '#1e40af',
                             900: '#1e3a8a',
                         },
-                        slate: {
-                            850: '#1e293b',
+                        dark: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#334155',
                         }
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                         'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-up': 'slideUp 0.4s ease-out forwards',
+                        'typing': 'typing 1.5s infinite',
                     },
                     keyframes: {
                         fadeInUp: {
@@ -63,6 +68,14 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
                             '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px) scale(0.95)' },
+                            '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+                        },
+                        typing: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.3' },
                         }
                     }
                 }
@@ -72,11 +85,18 @@
     
     <style>
         html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
         
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-glow {
+            background: radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at bottom left, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
         }
         
         .glass-card {
@@ -85,60 +105,22 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
         
-        .gradient-text {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3b82f6, #06b6d4);
         }
         
-        .hero-gradient {
-            background: radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-                        radial-gradient(ellipse at bottom left, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+        .skill-tag {
+            transition: all 0.3s ease;
         }
-        
-        .code-window {
-            background: #0f172a;
-            border-radius: 12px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-        }
-        
-        .code-header {
-            background: #1e293b;
-            padding: 12px 16px;
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-        
-        .code-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .typing-cursor::after {
-            content: '|';
-            animation: blink 1s step-end infinite;
-            color: #3b82f6;
-        }
-        
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-        
-        .service-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .metric-counter {
-            font-variant-numeric: tabular-nums;
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.25);
         }
         
         .scroll-reveal {
@@ -146,55 +128,300 @@
             transform: translateY(24px);
             transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
         .scroll-reveal.visible {
             opacity: 1;
             transform: translateY(0);
         }
         
         .nav-blur {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
-        }
-        
-        input:focus, textarea:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
-            border-color: #3b82f6;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
         
         .btn-primary {
             background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
             transition: all 0.3s ease;
         }
-        
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.5);
         }
         
-        .btn-secondary {
+        .stat-card {
             transition: all 0.3s ease;
         }
-        
-        .btn-secondary:hover {
-            background: #f1f5f9;
-            transform: translateY(-2px);
+        .stat-card:hover {
+            transform: translateY(-4px);
         }
         
-        .check-icon {
-            stroke-dasharray: 24;
-            stroke-dashoffset: 24;
-            transition: stroke-dashoffset 0.5s ease;
+        .experience-card {
+            transition: all 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: translateX(8px);
         }
         
-        .scroll-reveal.visible .check-icon {
-            stroke-dashoffset: 0;
+        /* Chatbot Styles */
+        .chat-widget {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .chat-toggle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .chat-toggle:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .chat-toggle .notification-dot {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 18px;
+            height: 18px;
+            background: #ef4444;
+            border-radius: 50%;
+            border: 3px solid white;
+            animation: pulse 2s infinite;
+        }
+        
+        .chat-window {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 380px;
+            max-width: calc(100vw - 48px);
+            height: 550px;
+            max-height: calc(100vh - 120px);
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .chat-window.open {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: all;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 20px 24px;
+            position: relative;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        
+        .chat-message {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        .chat-message.user {
+            flex-direction: row-reverse;
+        }
+        
+        .chat-message .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .chat-message.bot .avatar {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+        }
+        
+        .chat-message.user .avatar {
+            background: #e2e8f0;
+            color: #475569;
+        }
+        
+        .chat-message .bubble {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        
+        .chat-message.bot .bubble {
+            background: white;
+            color: #1e293b;
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        
+        .chat-message.user .bubble {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 16px;
+            align-items: center;
+        }
+        
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            background: #94a3b8;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        
+        .chat-input-area {
+            padding: 16px 20px;
+            background: white;
+            border-top: 1px solid #f1f5f9;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .chat-input {
+            flex: 1;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 10px 18px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.2s;
+        }
+        
+        .chat-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .chat-send {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .chat-send:hover {
+            transform: scale(1.05);
+        }
+        
+        .suggestion-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .suggestion-chip {
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #dbeafe;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        
+        .suggestion-chip:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         @media (max-width: 768px) {
-            .code-window { display: none; }
+            .timeline-line::before { left: 11px; }
+            .chat-window {
+                width: 100vw;
+                max-width: 100vw;
+                height: 100vh;
+                max-height: 100vh;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+                position: fixed;
+            }
+            .chat-widget {
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .chat-window { border-radius: 20px 20px 0 0; }
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-item.active .faq-content {
+            max-height: 500px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -204,131 +431,234 @@
     <nav class="fixed w-full z-50 nav-blur transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 lg:h-20">
-                <a href="#" class="flex items-center gap-2 group">
-                    <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-primary-500/30 group-hover:scale-110 transition-transform">
                         PR
                     </div>
-                    <span class="font-bold text-lg text-slate-900 tracking-tight">Prashant<span class="text-primary-600">Ranjan</span></span>
+                    <div class="hidden sm:block">
+                        <span class="font-bold text-lg text-white tracking-tight block leading-none">Prashant Ranjan</span>
+                        <span class="text-xs text-slate-400 font-medium">Senior Data Engineer</span>
+                    </div>
                 </a>
                 
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Services</a>
-                    <a href="#portfolio" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Case Studies</a>
-                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">About</a>
-                    <a href="#contact" class="btn-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg shadow-primary-500/25">
-                        Get Help Now
+                    <a href="#how-it-works" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">How It Works</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Services</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Experience</a>
+                    <a href="#pricing" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Pricing</a>
+                    <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">FAQ</a>
+                    <a href="#contact" class="btn-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-lg shadow-primary-500/25">
+                        Hire Me
                     </a>
                 </div>
                 
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors">
-                    <i data-lucide="menu" class="w-6 h-6 text-slate-700"></i>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors">
+                    <i data-lucide="menu" class="w-6 h-6 text-white"></i>
                 </button>
             </div>
         </div>
         
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl">
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-800 border-t border-white/5 absolute w-full shadow-2xl">
             <div class="px-4 py-6 space-y-4">
-                <a href="#services" class="block text-base font-medium text-slate-700 hover:text-primary-600">Services</a>
-                <a href="#portfolio" class="block text-base font-medium text-slate-700 hover:text-primary-600">Case Studies</a>
-                <a href="#about" class="block text-base font-medium text-slate-700 hover:text-primary-600">About</a>
+                <a href="#how-it-works" class="block text-base font-medium text-slate-300 hover:text-white">How It Works</a>
+                <a href="#services" class="block text-base font-medium text-slate-300 hover:text-white">Services</a>
+                <a href="#experience" class="block text-base font-medium text-slate-300 hover:text-white">Experience</a>
+                <a href="#pricing" class="block text-base font-medium text-slate-300 hover:text-white">Pricing</a>
+                <a href="#faq" class="block text-base font-medium text-slate-300 hover:text-white">FAQ</a>
                 <a href="#contact" class="block w-full text-center btn-primary text-white px-5 py-3 rounded-xl text-sm font-semibold mt-4">
-                    Get Help Now
+                    Hire Me
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
-        <div class="absolute inset-0 opacity-30">
-            <div class="absolute top-20 right-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow"></div>
-            <div class="absolute bottom-20 left-10 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+    <section class="relative min-h-screen flex items-center pt-20 bg-dark-900 hero-glow overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <div class="absolute top-20 right-20 w-96 h-96 bg-primary-600/20 rounded-full mix-blend-screen filter blur-3xl animate-pulse-slow"></div>
+            <div class="absolute bottom-20 left-20 w-72 h-72 bg-cyan-500/20 rounded-full mix-blend-screen filter blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="space-y-8 animate-fade-in-up">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 border border-primary-100 text-primary-700 text-sm font-semibold">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-semibold backdrop-blur-sm">
                         <span class="relative flex h-2 w-2">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
                         </span>
-                        Available for freelance projects
+                        Available for freelance & consulting
                     </div>
                     
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
-                        Optimize Your <span class="gradient-text">SQL Queries</span> & Fix Data Issues Fast
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight">
+                        Fix Your Data Problems <br>
+                        <span class="gradient-text">Without the Headache</span>
                     </h1>
                     
-                    <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
-                        I help businesses improve database performance, fix slow queries, and clean messy data using SQL, PostgreSQL, and Python. From startups to established companies, I deliver results that save time and money.
+                    <p class="text-lg sm:text-xl text-slate-400 leading-relaxed max-w-2xl">
+                        Slow queries killing your app? Messy data preventing decisions? I help startups and businesses fix their data infrastructure fast — with 10+ years of experience at GE, Google, and Kwalee.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-xl text-base font-semibold shadow-xl shadow-primary-500/20 text-center inline-flex items-center justify-center gap-2">
-                            Get Help Now
+                            Start a Project
                             <i data-lucide="arrow-right" class="w-5 h-5"></i>
                         </a>
-                        <a href="#portfolio" class="btn-secondary bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl text-base font-semibold text-center inline-flex items-center justify-center gap-2">
-                            View Case Studies
+                        <a href="#pricing" class="bg-white/5 text-white border border-white/10 hover:bg-white/10 px-8 py-4 rounded-xl text-base font-semibold text-center inline-flex items-center justify-center gap-2 transition-all backdrop-blur-sm">
+                            See Pricing
                         </a>
                     </div>
                     
                     <div class="flex items-center gap-6 pt-4 text-sm text-slate-500">
                         <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
-                            <span>Fast Delivery</span>
+                            <i data-lucide="map-pin" class="w-4 h-4 text-cyan-500"></i>
+                            <span>Bengaluru, India (Remote)</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
-                            <span>100% Remote</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
-                            <span>Clear Pricing</span>
+                            <i data-lucide="briefcase" class="w-4 h-4 text-cyan-500"></i>
+                            <span>Currently @ Genpact</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="relative hidden lg:block">
-                    <div class="code-window animate-float">
-                        <div class="code-header">
-                            <div class="code-dot bg-red-500"></div>
-                            <div class="code-dot bg-yellow-500"></div>
-                            <div class="code-dot bg-green-500"></div>
-                            <span class="ml-2 text-slate-400 text-xs font-mono">query_optimization.sql</span>
+                <div class="relative hidden lg:flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-cyan-500/20 rounded-3xl blur-2xl"></div>
+                        
+                        <!-- Profile Card with Photo -->
+                        <div class="relative bg-dark-800/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-primary-500/30 shadow-lg">
+                                    <img src="profile-photo.jpg" alt="Prashant Ranjan" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="w-full h-full bg-gradient-to-br from-primary-400 to-cyan-400 flex items-center justify-center text-white text-2xl font-bold hidden">PR</div>
+                                </div>
+                                <div>
+                                    <div class="text-white font-bold text-xl">Prashant Ranjan</div>
+                                    <div class="text-slate-400 text-sm">Senior Data Engineer</div>
+                                    <div class="flex items-center gap-1 mt-1">
+                                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                                        <span class="text-emerald-400 text-xs font-medium">Available for work</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-400">Experience</span>
+                                    <span class="text-white font-semibold">10+ Years</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-400">Data Integrity Rate</span>
+                                    <span class="text-white font-semibold">98%</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-400">Projects Delivered</span>
+                                    <span class="text-white font-semibold">50+</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <span class="text-slate-400">Response Time</span>
+                                    <span class="text-white font-semibold">&lt; 24 Hours</span>
+                                </div>
+                            </div>
+                            
+                            <div class="font-mono text-xs text-slate-500 bg-dark-900/50 rounded-xl p-4 border border-white/5">
+                                <div class="text-emerald-400 mb-1">$ python solve_data_issue.py</div>
+                                <div class="text-slate-300">> Analyzing PostgreSQL performance...</div>
+                                <div class="text-slate-300">> Optimizing queries...</div>
+                                <div class="text-emerald-400 mt-1">> Done! 40% faster processing.</div>
+                            </div>
                         </div>
-                        <div class="p-6 font-mono text-sm leading-relaxed">
-                            <div class="text-slate-400 mb-2">-- Before: 55 minutes execution time</div>
-                            <div class="text-purple-400">SELECT <span class="text-slate-300">*</span></div>
-                            <div class="text-purple-400">FROM <span class="text-slate-300">orders o</span></div>
-                            <div class="text-purple-400">JOIN <span class="text-slate-300">customers c</span></div>
-                            <div class="text-purple-400">  ON <span class="text-slate-300">o.customer_id = c.id</span></div>
-                            <div class="text-purple-400">WHERE <span class="text-slate-300">o.created_at > '2023-01-01';</span></div>
-                            <div class="text-slate-500 mt-4 mb-2">-- After: Optimized to 2 minutes</div>
-                            <div class="text-emerald-400">CREATE INDEX <span class="text-slate-300">idx_orders_created_at</span></div>
-                            <div class="text-emerald-400">ON <span class="text-slate-300">orders(created_at, customer_id);</span></div>
-                            <div class="text-emerald-400 mt-2">SELECT <span class="text-slate-300">o.id, o.total, c.name</span></div>
-                            <div class="text-emerald-400">FROM <span class="text-slate-300">orders o</span></div>
-                            <div class="text-emerald-400">JOIN <span class="text-slate-300">customers c</span></div>
-                            <div class="text-emerald-400">  ON <span class="text-slate-300">o.customer_id = c.id</span></div>
-                            <div class="text-emerald-400">WHERE <span class="text-slate-300">o.created_at > '2023-01-01';</span></div>
-                            <div class="mt-4 typing-cursor text-primary-400"></div>
+                        
+                        <!-- Floating stat -->
+                        <div class="absolute -bottom-6 -left-6 glass-card rounded-2xl p-4 shadow-2xl border border-white/20">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center">
+                                    <i data-lucide="trending-up" class="w-5 h-5 text-emerald-400"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500 font-medium">Avg. Performance Gain</div>
+                                    <div class="text-lg font-bold text-slate-900">40% Faster</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Floating Stats Card -->
-                    <div class="absolute -bottom-6 -left-6 glass-card rounded-2xl p-4 shadow-2xl border border-white/50 animate-fade-in-up" style="animation-delay: 0.5s;">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                                <i data-lucide="trending-down" class="w-5 h-5 text-emerald-600"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs text-slate-500 font-medium">Query Time Reduced</div>
-                                <div class="text-lg font-bold text-slate-900">55m → 2m</div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold text-slate-400 uppercase tracking-wider mb-8">Trusted by teams at</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-700">
+                    <i data-lucide="zap" class="w-6 h-6"></i> GE Vernova
+                </div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-700">
+                    <i data-lucide="search" class="w-6 h-6"></i> Google
+                </div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-700">
+                    <i data-lucide="gamepad-2" class="w-6 h-6"></i> Kwalee
+                </div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-700">
+                    <i data-lucide="building-2" class="w-6 h-6"></i> Genpact
+                </div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-700">
+                    <i data-lucide="globe" class="w-6 h-6"></i> Vaco Binary
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Simple Process</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">How It Works</h2>
+                <p class="mt-4 text-lg text-slate-600">No complicated procurement. No long-term contracts required. Start small, scale as needed.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="relative scroll-reveal">
+                    <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm h-full">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600 font-bold text-xl">1</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Tell Me Your Problem</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Fill the form or chat with the AI assistant. Describe your data issue, timeline, and budget.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-slate-300">
+                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </div>
+                </div>
+                
+                <div class="relative scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm h-full">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600 font-bold text-xl">2</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Get a Free Estimate</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">I'll review your requirements and send a clear proposal with scope, timeline, and pricing within 24 hours.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-slate-300">
+                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </div>
+                </div>
+                
+                <div class="relative scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm h-full">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-6 text-primary-600 font-bold text-xl">3</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">I Fix It</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">I work on your data pipeline, SQL queries, or cloud setup. You get daily updates via email or Slack.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 text-slate-300">
+                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </div>
+                </div>
+                
+                <div class="scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm h-full">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-emerald-600 font-bold text-xl">4</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Review & Pay</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">You test the solution. Once satisfied, pay via bank transfer or Wise. Post-delivery support included.</p>
                     </div>
                 </div>
             </div>
@@ -336,337 +666,473 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-white relative">
+    <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
                 <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Services</span>
-                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Expert Data Engineering Services</h2>
-                <p class="mt-4 text-lg text-slate-600">Specialized solutions for SQL optimization, PostgreSQL debugging, data cleaning, and pipeline engineering.</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">What I Can Do For You</h2>
+                <p class="mt-4 text-lg text-slate-600">Hire me for specific outcomes, not just hours. Every engagement is scoped to deliver measurable business value.</p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-slate-100 scroll-reveal">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal">
                     <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="zap" class="w-7 h-7 text-primary-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">SQL Query Optimization</h3>
-                    <p class="text-slate-600 leading-relaxed">Improve performance and reduce execution time of slow queries. Index tuning, query rewriting, and execution plan analysis.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Fix Slow Queries & Reports</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Your dashboard takes 10 minutes to load? Your overnight report is still running at 9 AM? I'll optimize your PostgreSQL queries and indexing to cut runtime by 50-90%.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary-500"></i>Query execution plan analysis</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary-500"></i>Index & partition optimization</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-primary-500"></i>Redshift / RDS tuning</li>
+                    </ul>
                 </div>
                 
-                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-slate-100 scroll-reveal" style="transition-delay: 100ms;">
-                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="bug" class="w-7 h-7 text-orange-600"></i>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="cloud" class="w-7 h-7 text-cyan-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">PostgreSQL Debugging</h3>
-                    <p class="text-slate-600 leading-relaxed">Fix errors, joins, and complex query issues. Resolve connection problems, deadlocks, and data inconsistencies.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Build Cloud Data Pipelines</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Need to move from messy CSVs and Excel to a proper automated pipeline? I'll build ETL/ELT workflows on AWS using Airflow, Glue, and Lambda that run on autopilot.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i>Apache Airflow orchestration</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i>AWS Glue + PySpark jobs</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-500"></i>Terraform infrastructure as code</li>
+                    </ul>
                 </div>
                 
-                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-slate-100 scroll-reveal" style="transition-delay: 200ms;">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal" style="transition-delay: 200ms;">
                     <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="sparkles" class="w-7 h-7 text-emerald-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Data Cleaning & Transformation</h3>
-                    <p class="text-slate-600 leading-relaxed">Clean and structure raw data for better insights. Handle missing values, duplicates, format standardization, and validation.</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Clean & Structure Messy Data</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Duplicates, missing values, inconsistent formats ruining your analysis? I'll build a data quality framework that cleans your data automatically and maintains 98%+ integrity.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>Automated validation rules</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>Deduplication & standardization</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>Schema enforcement</li>
+                    </ul>
                 </div>
                 
-                <div class="service-card bg-slate-50 rounded-2xl p-8 border border-slate-100 scroll-reveal" style="transition-delay: 300ms;">
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal">
                     <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="workflow" class="w-7 h-7 text-purple-600"></i>
+                        <i data-lucide="bar-chart-2" class="w-7 h-7 text-purple-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Data Engineering Support</h3>
-                    <p class="text-slate-600 leading-relaxed">Help with pipelines, ETL processes, and database tasks. Build robust data infrastructure and automation workflows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Me Section -->
-    <section class="py-24 bg-slate-50 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="scroll-reveal">
-                    <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Why Work With Me</span>
-                    <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Reliable, Fast, and Results-Driven</h2>
-                    <p class="mt-4 text-lg text-slate-600 leading-relaxed">I focus on delivering measurable improvements to your data systems. No fluff, just solutions that work.</p>
-                    
-                    <div class="mt-10 space-y-6">
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover:border-primary-300 transition-colors">
-                                <svg class="w-5 h-5 text-primary-600 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-slate-900">Fast Delivery</h4>
-                                <p class="text-slate-600 mt-1">Most query optimizations and fixes delivered within 24-48 hours. Urgent issues handled same-day.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover:border-primary-300 transition-colors">
-                                <svg class="w-5 h-5 text-primary-600 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-slate-900">Real-World Experience</h4>
-                                <p class="text-slate-600 mt-1">Years of hands-on experience with production databases, complex joins, and high-volume data processing.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover:border-primary-300 transition-colors">
-                                <svg class="w-5 h-5 text-primary-600 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-slate-900">Cost-Effective Solutions</h4>
-                                <p class="text-slate-600 mt-1">Freelance rates without agency overhead. Pay for results, not meetings. Transparent pricing from the start.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4 group">
-                            <div class="w-10 h-10 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover:border-primary-300 transition-colors">
-                                <svg class="w-5 h-5 text-primary-600 check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-slate-900">Clear Communication</h4>
-                                <p class="text-slate-600 mt-1">No technical jargon. I explain problems and solutions in plain English so you understand exactly what's happening.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Create Dashboards & Reports</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Leadership wants visibility but your data is scattered? I'll build Tableau or Power BI dashboards connected to your live data so decisions are based on facts, not gut feeling.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-500"></i>Tableau / Power BI / Looker</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-500"></i>Executive KPI dashboards</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-500"></i>Automated daily/weekly reports</li>
+                    </ul>
                 </div>
                 
-                <div class="relative scroll-reveal">
-                    <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100">
-                        <div class="space-y-6">
-                            <div class="flex justify-between items-center pb-4 border-b border-slate-100">
-                                <span class="text-sm font-medium text-slate-500">Average Response Time</span>
-                                <span class="text-2xl font-bold text-primary-600">&lt; 2 hours</span>
-                            </div>
-                            <div class="flex justify-between items-center pb-4 border-b border-slate-100">
-                                <span class="text-sm font-medium text-slate-500">Projects Completed</span>
-                                <span class="text-2xl font-bold text-primary-600">50+</span>
-                            </div>
-                            <div class="flex justify-between items-center pb-4 border-b border-slate-100">
-                                <span class="text-sm font-medium text-slate-500">Client Satisfaction</span>
-                                <span class="text-2xl font-bold text-primary-600">100%</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm font-medium text-slate-500">Query Speed Improvement</span>
-                                <span class="text-2xl font-bold text-emerald-600">Up to 95%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8 p-4 bg-primary-50 rounded-xl border border-primary-100">
-                            <div class="flex items-start gap-3">
-                                <i data-lucide="quote" class="w-6 h-6 text-primary-400 flex-shrink-0 mt-1"></i>
-                                <div>
-                                    <p class="text-slate-700 italic text-sm leading-relaxed">"Fixed our reporting query that was timing out every night. Reduced from hours to minutes. Absolutely essential work."</p>
-                                    <p class="text-slate-500 text-xs mt-2 font-medium">— Startup CTO, SaaS Company</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="arrow-left-right" class="w-7 h-7 text-orange-600"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Migrate Legacy ETL to Cloud</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Still running Talend or Informatica jobs on a server under someone's desk? I'll migrate your pipelines to AWS / Databricks with zero downtime and 40% cost savings.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i>Talend → AWS Glue migration</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i>Zero-downtime cutover</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i>Cost optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1 scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="code" class="w-7 h-7 text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">API & Backend Development</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">Need a custom API to feed data into your app? I'll build RESTful APIs with Python/Flask, connect them to your database, and deploy on AWS API Gateway with proper monitoring.</p>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-500"></i>Flask / Django REST APIs</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-500"></i>AWS API Gateway + Lambda</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-500"></i>Postman testing & docs</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio / Case Studies Section -->
-    <section id="portfolio" class="py-24 bg-white">
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
-                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Case Studies</span>
-                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Real Results for Real Businesses</h2>
-                <p class="mt-4 text-lg text-slate-600">Here are a few examples of how I've helped clients solve critical data problems.</p>
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Career Journey</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Where I've Delivered Results</h2>
+                <p class="mt-4 text-lg text-slate-600">A track record of solving complex data problems across global enterprises.</p>
             </div>
             
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Case Study 1 -->
-                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-500 scroll-reveal">
-                    <div class="h-2 bg-gradient-to-r from-primary-500 to-primary-600"></div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-wide">SQL Optimization</span>
+            <div class="max-w-4xl mx-auto relative timeline-line space-y-12">
+                <!-- Genpact -->
+                <div class="relative pl-12 sm:pl-16 scroll-reveal">
+                    <div class="absolute left-0 top-0 w-8 h-8 bg-primary-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                        <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="experience-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Senior Data Engineer</h3>
+                                <p class="text-primary-600 font-semibold">Genpact <span class="text-slate-400 font-normal">| Client: GE Vernova</span></p>
+                            </div>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-xs font-bold uppercase tracking-wide self-start">Current</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition-colors">E-Commerce Analytics Query Fix</h3>
-                        <p class="text-slate-600 mb-6 leading-relaxed">A retail company's daily sales report query was taking 55 minutes to run, blocking other operations and delaying business decisions.</p>
-                        
-                        <div class="bg-white rounded-xl p-5 border border-slate-200 mb-6">
-                            <div class="flex items-center justify-between mb-2">
-                                <span class="text-sm text-slate-500">Execution Time</span>
-                            </div>
-                            <div class="flex items-end gap-3">
-                                <div class="text-3xl font-bold text-slate-400 line-through decoration-red-400 decoration-2">55m</div>
-                                <i data-lucide="arrow-right" class="w-5 h-5 text-primary-500 mb-2"></i>
-                                <div class="text-3xl font-bold text-emerald-600">2m</div>
-                            </div>
-                            <div class="mt-2 w-full bg-slate-100 rounded-full h-2">
-                                <div class="bg-emerald-500 h-2 rounded-full" style="width: 96%"></div>
-                            </div>
-                            <div class="mt-1 text-xs text-emerald-600 font-semibold">96% improvement</div>
-                        </div>
-                        
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Added composite indexes
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Rewrote subqueries as joins
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Optimized date range filtering
-                            </div>
-                        </div>
+                        <p class="text-sm text-slate-500 mb-4 font-medium">Bengaluru, India | June 2024 – Present</p>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Designed and implemented data pipelines using <strong>PostgreSQL</strong> and <strong>Apache Airflow</strong> for seamless orchestration and integration across multiple data sources.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Led migration of ETL processes from <strong>Talend and Informatica</strong> to <strong>Enterprise Data Lake (EDL)</strong>, improving scalability and efficiency.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Automated cloud infrastructure using <strong>Terraform</strong>, provisioning AWS resources for standardized, secure environments.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Developed production-grade <strong>ETL/ELT pipelines</strong> using <strong>Databricks, PySpark, and AWS services</strong>, improving reliability and cost efficiency.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <!-- Case Study 2 -->
-                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 scroll-reveal" style="transition-delay: 100ms;">
-                    <div class="h-2 bg-gradient-to-r from-orange-500 to-red-500"></div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-bold uppercase tracking-wide">Data Cleaning</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors">CRM Database Cleanup</h3>
-                        <p class="text-slate-600 mb-6 leading-relaxed">A marketing agency had 200,000+ contact records with duplicates, inconsistent formatting, and missing values affecting campaign targeting.</p>
-                        
-                        <div class="bg-white rounded-xl p-5 border border-slate-200 mb-6">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <div class="text-sm text-slate-500 mb-1">Duplicates Removed</div>
-                                    <div class="text-2xl font-bold text-orange-600">45,000+</div>
-                                </div>
-                                <div>
-                                    <div class="text-sm text-slate-500 mb-1">Data Accuracy</div>
-                                    <div class="text-2xl font-bold text-emerald-600">98%</div>
-                                </div>
+                <!-- Kwalee -->
+                <div class="relative pl-12 sm:pl-16 scroll-reveal">
+                    <div class="absolute left-0 top-0 w-8 h-8 bg-cyan-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                        <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="experience-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Software Engineer — Reporting</h3>
+                                <p class="text-cyan-600 font-semibold">Kwalee <span class="text-slate-400 font-normal">| UK-based App Development</span></p>
                             </div>
                         </div>
-                        
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Fuzzy matching for deduplication
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Standardized phone/email formats
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Automated validation rules
-                            </div>
-                        </div>
+                        <p class="text-sm text-slate-500 mb-4 font-medium">Bengaluru, India | May 2023 – April 2024</p>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Developed reporting tools using <strong>Python, SQL, and PostgreSQL</strong>, improving reporting efficiency by <strong>25%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Integrated <strong>AWS Glue and PySpark</strong> for data analysis, increasing data-driven decision-making accuracy by <strong>30%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Generated ad-hoc datasets using <strong>S3, Redshift, and RDS</strong>, driving a <strong>40% increase</strong> in strategic decision-making.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-cyan-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Achieved <strong>98% data integrity rate</strong> through rigorous cleaning and validation using <strong>Pandas and AWS Glue</strong>.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-                <!-- Case Study 3 -->
-                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 scroll-reveal" style="transition-delay: 200ms;">
-                    <div class="h-2 bg-gradient-to-r from-purple-500 to-indigo-500"></div>
-                    <div class="p-8">
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wide">ETL Pipeline</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-purple-600 transition-colors">Automated Reporting Pipeline</h3>
-                        <p class="text-slate-600 mb-6 leading-relaxed">A fintech startup needed to consolidate data from 5 different sources into a unified daily report for stakeholders.</p>
-                        
-                        <div class="bg-white rounded-xl p-5 border border-slate-200 mb-6">
-                            <div class="flex items-center justify-between mb-2">
-                                <span class="text-sm text-slate-500">Manual Work Eliminated</span>
-                            </div>
-                            <div class="text-3xl font-bold text-purple-600">20 hrs/week</div>
-                            <div class="mt-2 text-sm text-slate-500">Fully automated with error handling and alerting</div>
-                        </div>
-                        
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Python + PostgreSQL ETL
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Data validation at each stage
-                            </div>
-                            <div class="flex items-center gap-2 text-sm text-slate-600">
-                                <i data-lucide="check" class="w-4 h-4 text-emerald-500"></i>
-                                Slack alerts for failures
+                <!-- Vaco Binary Semantics -->
+                <div class="relative pl-12 sm:pl-16 scroll-reveal">
+                    <div class="absolute left-0 top-0 w-8 h-8 bg-emerald-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center">
+                        <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
+                    </div>
+                    <div class="experience-card bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Senior Analyst</h3>
+                                <p class="text-emerald-600 font-semibold">Vaco Binary Semantics LLP <span class="text-slate-400 font-normal">| Client: Google</span></p>
                             </div>
                         </div>
+                        <p class="text-sm text-slate-500 mb-4 font-medium">Gurugram, India | Sep 2016 – May 2023</p>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Optimized data processes for <strong>YouTube Ads</strong> with Python and SQL, enhancing decision-making accuracy by <strong>35%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Built comprehensive <strong>Tableau and Looker dashboards</strong> for Google NESTcam, improving data accessibility by <strong>40%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Automated workflows using <strong>AWS Glue and Lambda</strong>, improving scalability by <strong>35%</strong>.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Maintained <strong>98% data integrity</strong> through meticulous cleaning and validation processes.</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-24 bg-slate-50">
+    <!-- Impact / Achievements Section -->
+    <section class="py-24 bg-dark-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-600 rounded-full mix-blend-screen filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-screen filter blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+                <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Impact</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-white tracking-tight">Measurable Results</h2>
+                <p class="mt-4 text-lg text-slate-400">Real improvements delivered across data processing, reporting, and cloud infrastructure.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center scroll-reveal">
+                    <div class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-primary-400 to-cyan-400 mb-2">40%</div>
+                    <div class="text-slate-300 font-medium">Faster Processing</div>
+                    <div class="text-sm text-slate-500 mt-2">ETL pipeline optimization via AWS & PySpark</div>
+                </div>
+                
+                <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-cyan-400 mb-2">98%</div>
+                    <div class="text-slate-300 font-medium">Data Integrity</div>
+                    <div class="text-sm text-slate-500 mt-2">Cleaning & validation with Pandas & PostgreSQL</div>
+                </div>
+                
+                <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-red-400 mb-2">35%</div>
+                    <div class="text-slate-300 font-medium">Decision Accuracy</div>
+                    <div class="text-sm text-slate-500 mt-2">YouTube Ads data optimization at Google</div>
+                </div>
+                
+                <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-pink-400 mb-2">25%</div>
+                    <div class="text-slate-300 font-medium">Reporting Efficiency</div>
+                    <div class="text-sm text-slate-500 mt-2">Tool development with Python & PostgreSQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-5 gap-12 items-center">
-                <div class="lg:col-span-2 scroll-reveal">
-                    <div class="relative">
-                        <div class="w-full aspect-square bg-gradient-to-br from-primary-100 to-cyan-100 rounded-3xl flex items-center justify-center">
-                            <div class="text-center p-8">
-                                <div class="w-24 h-24 bg-white rounded-2xl shadow-lg mx-auto mb-6 flex items-center justify-center">
-                                    <i data-lucide="database" class="w-12 h-12 text-primary-600"></i>
-                                </div>
-                                <div class="text-5xl font-bold text-slate-800 mb-2">10+</div>
-                                <div class="text-slate-600 font-medium">Years Experience</div>
-                            </div>
-                        </div>
-                        <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-xl border border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
-                                <span class="text-sm font-semibold text-slate-700">Available for work</span>
-                            </div>
-                        </div>
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Investment</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Simple, Transparent Pricing</h2>
+                <p class="mt-4 text-lg text-slate-600">No hidden fees. No long-term contracts required. Pay for outcomes, not hours spent searching Stack Overflow.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all scroll-reveal">
+                    <div class="text-sm font-bold text-primary-600 uppercase tracking-wider mb-2">Query Fix</div>
+                    <div class="text-4xl font-bold text-slate-900 mb-1">$180</div>
+                    <div class="text-slate-500 text-sm mb-6">per issue / Starting at</div>
+                    <p class="text-slate-600 text-sm mb-6">Best for: Slow queries, database debugging, single report fixes.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Query analysis & optimization</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Index recommendations</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>1 revision included</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Delivery: 1-2 days</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-3 rounded-xl border-2 border-primary-600 text-primary-600 font-semibold hover:bg-primary-600 hover:text-white transition-all">Get Started</a>
+                </div>
+                
+                <!-- Growth (Featured) -->
+                <div class="bg-dark-900 rounded-2xl p-8 border border-primary-500/30 shadow-2xl relative scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-primary-500 to-cyan-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Most Popular</span>
+                    </div>
+                    <div class="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-2">Project Based</div>
+                    <div class="text-4xl font-bold text-white mb-1">$900</div>
+                    <div class="text-slate-400 text-sm mb-6">per project / Starting at</div>
+                    <p class="text-slate-300 text-sm mb-6">Best for: Pipeline builds, dashboard creation, data migrations.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3 text-sm text-slate-300">
+                            <i data-lucide="check" class="w-5 h-5 text-cyan-400 flex-shrink-0"></i>
+                            <span>End-to-end solution delivery</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-300">
+                            <i data-lucide="check" class="w-5 h-5 text-cyan-400 flex-shrink-0"></i>
+                            <span>Architecture design included</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-300">
+                            <i data-lucide="check" class="w-5 h-5 text-cyan-400 flex-shrink-0"></i>
+                            <span>3 revisions included</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-300">
+                            <i data-lucide="check" class="w-5 h-5 text-cyan-400 flex-shrink-0"></i>
+                            <span>2 weeks post-delivery support</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-300">
+                            <i data-lucide="check" class="w-5 h-5 text-cyan-400 flex-shrink-0"></i>
+                            <span>Code documentation</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-3 rounded-xl bg-gradient-to-r from-primary-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-primary-500/25 transition-all">Get Started</a>
+                </div>
+                
+                <!-- Enterprise -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-all scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="text-sm font-bold text-primary-600 uppercase tracking-wider mb-2">Retainer</div>
+                    <div class="text-4xl font-bold text-slate-900 mb-1">Custom</div>
+                    <div class="text-slate-500 text-sm mb-6">monthly engagement</div>
+                    <p class="text-slate-600 text-sm mb-6">Best for: Ongoing data engineering support, fractional CTO-level data advisory.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Dedicated weekly hours</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Priority support & response</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Strategy & architecture review</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm text-slate-700">
+                            <i data-lucide="check" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                            <span>Slack / Teams integration</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-3 rounded-xl border-2 border-primary-600 text-primary-600 font-semibold hover:bg-primary-600 hover:text-white transition-all">Contact for Quote</a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center scroll-reveal">
+                <p class="text-slate-500 text-sm">All prices in USD. International clients welcome. Taxes extra as applicable. Payment via bank transfer or Wise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">FAQ</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900">Common Questions</h2>
+                <p class="mt-4 text-lg text-slate-600">Quick answers. If you don't see your question, ask the AI assistant in the corner.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden scroll-reveal">
+                    <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-bold text-slate-900 text-lg">How quickly can you start?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-slate-600 leading-relaxed">Typically within 24-48 hours of project confirmation. For urgent query fixes, I can often begin same-day. I currently work full-time at Genpact, so freelance projects are handled during evenings and weekends — perfect for urgent fixes and small-to-medium projects.</p>
                     </div>
                 </div>
                 
-                <div class="lg:col-span-3 scroll-reveal">
-                    <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">About Me</span>
-                    <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Data Engineer & SQL Specialist</h2>
-                    <div class="mt-6 space-y-4 text-lg text-slate-600 leading-relaxed">
-                        <p>
-                            I am a Data Engineer with extensive experience in SQL, PostgreSQL, and data processing. I specialize in solving complex data problems and improving system performance for businesses of all sizes.
-                        </p>
-                        <p>
-                            Whether you're dealing with slow queries that are hurting your application performance, messy data that's preventing accurate reporting, or need help building reliable data pipelines—I provide practical, efficient solutions that deliver measurable results.
-                        </p>
-                        <p>
-                            I work remotely with clients worldwide, offering flexible engagement models from one-time query fixes to ongoing data engineering support.
-                        </p>
+                <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden scroll-reveal">
+                    <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-bold text-slate-900 text-lg">Do you work with international clients?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-slate-600 leading-relaxed">Yes. I'm based in Bengaluru, India (IST timezone) but regularly work with US, UK, and EU clients. I'm comfortable with async communication via Slack, email, and Notion. For real-time collaboration, I can align with EST mornings or GMT afternoons.</p>
                     </div>
-                    
-                    <div class="mt-8 flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">PostgreSQL</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">SQL Optimization</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">Python</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">ETL Pipelines</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">Data Modeling</span>
-                        <span class="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-700 shadow-sm">Query Tuning</span>
+                </div>
+                
+                <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden scroll-reveal">
+                    <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-bold text-slate-900 text-lg">What if I'm not satisfied with the work?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-slate-600 leading-relaxed">For fixed-price projects, payment is milestone-based. You pay 50% upfront and 50% after delivery and your approval. If the solution doesn't meet the agreed scope, I revise until it does — revisions are included in the package. For query fixes, I demonstrate the performance improvement before you pay.</p>
                     </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden scroll-reveal">
+                    <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-bold text-slate-900 text-lg">Do you sign NDAs?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-slate-600 leading-relaxed">Absolutely. I've worked with Fortune 500 clients (Google, GE) under strict confidentiality. I'm happy to sign your NDA or provide my own standard mutual NDA before discussing sensitive database architecture or business data.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item bg-white rounded-2xl border border-slate-100 overflow-hidden scroll-reveal">
+                    <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-bold text-slate-900 text-lg">What technologies do you NOT work with?</span>
+                        <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-slate-600 leading-relaxed">I specialize in the AWS ecosystem, PostgreSQL, Python, and modern data stack (Airflow, Databricks, Spark). I don't work with Microsoft Azure, Oracle databases, or frontend-heavy full-stack projects (React/Vue apps). If you're unsure, just ask — I'll be honest about fit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 scroll-reveal">
+                <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Credentials</span>
+                <h2 class="mt-3 text-3xl font-bold text-slate-900">Certifications</h2>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow scroll-reveal">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="award" class="w-7 h-7 text-orange-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1">AWS Certified</h3>
+                    <p class="text-sm text-slate-600">Cloud Practitioner</p>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="graduation-cap" class="w-7 h-7 text-primary-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1">Python</h3>
+                    <p class="text-sm text-slate-600">Getting Started with Python — Coursera</p>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="shield" class="w-7 h-7 text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1">NCC Grade A</h3>
+                    <p class="text-sm text-slate-600">National Cadet Corps Certificate</p>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center hover:shadow-lg transition-shadow scroll-reveal" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="brain" class="w-7 h-7 text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 mb-1">Gen AI</h3>
+                    <p class="text-sm text-slate-600">Genome BITS Wave for GEN AI</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-white relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-white via-primary-50/30 to-white"></div>
+    <section id="contact" class="py-24 bg-slate-50 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
                 <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Contact</span>
-                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Have a query? Let's fix it together.</h2>
-                <p class="mt-4 text-lg text-slate-600">Tell me about your data challenge. I'll get back to you within a few hours.</p>
+                <h2 class="mt-3 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Let's Build Something Great Together</h2>
+                <p class="mt-4 text-lg text-slate-600">Have a data challenge? Looking for a cloud expert? I'm available for freelance and consulting opportunities.</p>
             </div>
             
             <div class="grid lg:grid-cols-5 gap-12 max-w-6xl mx-auto">
@@ -675,29 +1141,42 @@
                         <div class="grid sm:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label class="block text-sm font-semibold text-slate-700 mb-2">Name</label>
-                                <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all" placeholder="Your name">
+                                <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500" placeholder="Your Name">
                             </div>
                             <div>
                                 <label class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
-                                <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all" placeholder="you@company.com">
+                                <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500" placeholder="you@company.com">
                             </div>
                         </div>
                         
                         <div class="mb-6">
                             <label class="block text-sm font-semibold text-slate-700 mb-2">Project Type</label>
-                            <select name="project_type" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all">
-                                <option>SQL Query Optimization</option>
-                                <option>PostgreSQL Debugging</option>
-                                <option>Data Cleaning</option>
-                                <option>ETL / Pipeline Work</option>
-                                <option>General Consultation</option>
-                                <option>Other</option>
+                            <select name="project_type" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500">
+                                <option>Fix Slow Queries / Database Issue</option>
+                                <option>Build ETL / Data Pipeline</option>
+                                <option>AWS Cloud Setup / Migration</option>
+                                <option>Data Cleaning & Validation</option>
+                                <option>Dashboard / Reporting</option>
+                                <option>Legacy ETL Migration</option>
+                                <option>API Development</option>
+                                <option>Ongoing Retainer / Advisory</option>
                             </select>
                         </div>
                         
                         <div class="mb-6">
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">Tell me about your project</label>
-                            <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all resize-none" placeholder="Describe your data issue, timeline, and any specific requirements..."></textarea>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Budget Range (USD)</label>
+                            <select name="budget" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 transition-all focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500">
+                                <option>Under $200 (Quick Fix)</option>
+                                <option>$200 – $1,000</option>
+                                <option>$1,000 – $5,000</option>
+                                <option>$5,000+</option>
+                                <option>Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Project Details</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 placeholder-slate-400 transition-all resize-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500" placeholder="Tell me about your project, timeline, and goals..."></textarea>
                         </div>
                         
                         <button type="submit" class="w-full btn-primary text-white px-8 py-4 rounded-xl text-base font-semibold shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2">
@@ -715,229 +1194,409 @@
                 </div>
                 
                 <div class="lg:col-span-2 space-y-6 scroll-reveal" style="transition-delay: 100ms;">
-                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
                         <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
                             <i data-lucide="mail" class="w-6 h-6 text-primary-600"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slate-900 mb-1">Email</h3>
-                        <p class="text-slate-600 text-sm mb-3">Best for detailed project discussions</p>
-                        <a href="mailto:prashantranjande@gmail.com" class="text-primary-600 font-semibold hover:underline">prashantranjande@gmail.com</a>
+                        <p class="text-slate-600 text-sm mb-3">Best for project discussions</p>
+                        <a href="mailto:prashantranjande@gmail.com" class="text-primary-600 font-semibold hover:underline break-all">prashantranjande@gmail.com</a>
                     </div>
                     
-                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
-                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
-                            <i data-lucide="message-circle" class="w-6 h-6 text-emerald-600"></i>
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="linkedin" class="w-6 h-6 text-blue-600"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">WhatsApp</h3>
-                        <p class="text-slate-600 text-sm mb-3">Quick questions and urgent issues</p>
-                        <a href="https://wa.me/9358268422" target="_blank" class="text-emerald-600 font-semibold hover:underline inline-flex items-center gap-1">
-                            Chat on WhatsApp
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">LinkedIn</h3>
+                        <p class="text-slate-600 text-sm mb-3">Connect professionally</p>
+                        <a href="https://www.linkedin.com/in/prashantranjan131/" target="_blank" class="text-blue-600 font-semibold hover:underline inline-flex items-center gap-1">
+                            View Profile
                             <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
                     </div>
                     
-                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
                         <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                            <i data-lucide="clock" class="w-6 h-6 text-purple-600"></i>
+                            <i data-lucide="map-pin" class="w-6 h-6 text-purple-600"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">Availability</h3>
-                        <p class="text-slate-600 text-sm mb-2">Monday - Friday</p>
-                        <p class="text-slate-900 font-semibold">9:00 AM - 6:00 PM UTC</p>
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">Location</h3>
+                        <p class="text-slate-600 text-sm mb-2">Bengaluru, India</p>
+                        <p class="text-slate-500 text-xs">Available for remote work worldwide</p>
                     </div>
+                    
+                    <div class="bg-primary-50 rounded-2xl p-6 border border-primary-100">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="text-slate-700 text-sm leading-relaxed font-medium">Typical response time: <span class="text-primary-700">Within 24 hours</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="Prashant_R_1D.pdf" download class="block w-full text-center py-3 rounded-xl border-2 border-slate-200 text-slate-700 font-semibold hover:border-primary-600 hover:text-primary-600 transition-all text-sm">
+                        <span class="flex items-center justify-center gap-2">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            Download Resume (PDF)
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-300 py-12">
+    <footer class="bg-dark-900 text-slate-300 py-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold shadow-lg">
                         PR
                     </div>
-                    <span class="font-bold text-lg text-white tracking-tight">Prashant<span class="text-primary-400">Ranjan</span></span>
+                    <div>
+                        <span class="font-bold text-lg text-white tracking-tight block leading-none">Prashant Ranjan</span>
+                        <span class="text-xs text-slate-500">Senior Data Engineer</span>
+                    </div>
                 </div>
                 
                 <div class="flex items-center gap-8 text-sm">
+                    <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
                     <a href="#services" class="hover:text-white transition-colors">Services</a>
-                    <a href="#portfolio" class="hover:text-white transition-colors">Case Studies</a>
-                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                    <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+                    <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
                     <a href="#contact" class="hover:text-white transition-colors">Contact</a>
                 </div>
                 
-                <div class="text-sm text-slate-500">
-                    © 2026 Data Engineering Consultant. All rights reserved.
+                <div class="text-sm text-slate-600">
+                    © 2026 Prashant Ranjan. All rights reserved.
                 </div>
             </div>
             
-            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-600">
-                <p>Specializing in SQL optimization, PostgreSQL expert consulting, data engineer freelance services, fixing slow queries, and database performance tuning.</p>
+            <div class="mt-8 pt-8 border-t border-white/5 text-center text-xs text-slate-600">
+                <p>Specializing in AWS Cloud, PySpark, PostgreSQL, Python, SQL, ETL/ELT Pipelines, Databricks, Terraform, Tableau, and Data Engineering.</p>
             </div>
         </div>
     </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chat-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <i data-lucide="bot" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-white">Prashant's AI Assistant</div>
+                        <div class="text-xs text-cyan-200 flex items-center gap-1">
+                            <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                            Online — Replies instantly
+                        </div>
+                    </div>
+                </div>
+                <button onclick="toggleChat()" class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be injected here -->
+            </div>
+            
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" class="chat-input" placeholder="Ask me anything..." onkeypress="handleChatKeypress(event)">
+                <button onclick="sendChatMessage()" class="chat-send">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+        
+        <button class="chat-toggle" id="chatToggle" onclick="toggleChat()">
+            <span class="notification-dot" id="chatDot"></span>
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+        </button>
+    </div>
 
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
         
-        // Mobile menu toggle
+        // Mobile menu
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
         
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 50) navbar.classList.add('shadow-lg');
+            else navbar.classList.remove('shadow-lg');
         });
         
-        // Close mobile menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-		
-		        // Contact form handling — submits to Formspree without leaving the page
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+        
+        // Contact form AJAX for Formspree
         const contactForm = document.getElementById('contact-form');
         const formSuccess = document.getElementById('form-success');
-
+        
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Stop the page from redirecting
-
+            e.preventDefault();
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
-
-            // Show "Sending..." state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="animate-pulse">Sending...</span>';
-
-            // Collect form data
-            const formData = new FormData(contactForm);
-
-            // Send to Formspree via AJAX
+            
             fetch(contactForm.action, {
                 method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
             })
             .then(response => {
                 if (response.ok) {
-                    // Success: show green message inside the site
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
                     formSuccess.classList.remove('hidden');
                     contactForm.reset();
-
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        formSuccess.classList.add('hidden');
-                    }, 5000);
-                } else {
-                    throw new Error('Form submission failed');
-                }
+                    setTimeout(() => formSuccess.classList.add('hidden'), 5000);
+                } else throw new Error('Failed');
             })
-            .catch(error => {
-                // Error handling
+            .catch(() => {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-                alert('Oops! Something went wrong. Please try again or email me directly.');
+                alert('Something went wrong. Please email me directly at prashantranjande@gmail.com');
             });
         });
         
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        let lastScroll = 0;
-        
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                navbar.classList.add('shadow-sm');
-            } else {
-                navbar.classList.remove('shadow-sm');
-            }
-            
-            lastScroll = currentScroll;
-        });
-        
-        // Scroll reveal animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.scroll-reveal').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Smooth scroll for anchor links
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offsetTop = target.offsetTop - 80;
-                    window.scrollTo({
-                        top: offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
+                if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
             });
         });
         
-        // Typing animation for hero code
-        const typingElements = document.querySelectorAll('.typing-cursor');
-        const codeSnippets = [
-            '-- Ready to optimize your database?',
-            '-- Let\'s fix your slow queries today.',
-            '-- Get in touch for a free consultation.'
-        ];
-        
-        let snippetIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingElement = typingElements[0];
-        
-        function typeEffect() {
-            if (!typingElement) return;
-            
-            const currentSnippet = codeSnippets[snippetIndex];
-            
-            if (isDeleting) {
-                typingElement.textContent = currentSnippet.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingElement.textContent = currentSnippet.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            let typeSpeed = isDeleting ? 50 : 100;
-            
-            if (!isDeleting && charIndex === currentSnippet.length) {
-                typeSpeed = 2000;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                snippetIndex = (snippetIndex + 1) % codeSnippets.length;
-                typeSpeed = 500;
-            }
-            
-            setTimeout(typeEffect, typeSpeed);
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(faq => faq.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
         }
         
-        // Start typing animation after page load
-        setTimeout(typeEffect, 1000);
+        // ==================== AI CHATBOT ====================
+        
+        const chatWindow = document.getElementById('chatWindow');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const chatDot = document.getElementById('chatDot');
+        let chatHistory = JSON.parse(localStorage.getItem('prashant_chat_history') || '[]');
+        let isChatOpen = false;
+        
+        const knowledgeBase = {
+            greetings: {
+                patterns: ['hi', 'hello', 'hey', 'namaste', 'good morning', 'good afternoon', 'good evening', 'howdy'],
+                responses: [
+                    "Hello! I'm Prashant's AI assistant. I can help you learn about his services, experience, pricing, or availability. What brings you here today?",
+                    "Hi there! Looking for help with data engineering, SQL optimization, or AWS cloud setup? Ask me anything about Prashant's work!"
+                ]
+            },
+            services: {
+                patterns: ['service', 'offer', 'do you', 'what do you', 'help with', 'can you', 'fix', 'query', 'pipeline', 'etl', 'dashboard', 'migration', 'clean', 'api'],
+                responses: [
+                    "Prashant specializes in: 1) Fixing slow PostgreSQL queries, 2) Building ETL/ELT pipelines on AWS (Airflow, Glue, PySpark), 3) Migrating legacy ETL to cloud, 4) Data cleaning & validation, 5) Tableau/Power BI dashboards, and 6) REST API development. Which area are you struggling with?",
+                    "He offers outcome-based services: Query fixes ($180+), Full projects ($900+), and Monthly retainers. All focused on AWS, PostgreSQL, Python, and Databricks. What type of project do you have?"
+                ]
+            },
+            pricing: {
+                patterns: ['price', 'cost', 'how much', 'rate', 'charge', 'fee', 'budget', 'expensive', 'cheap', 'affordable', 'usd', 'dollar', '$', 'payment'],
+                responses: [
+                    "Prashant offers transparent USD pricing: Quick Query Fixes start at $180, Project-Based work starts at $900, and Monthly Retainers are custom-quoted. International clients welcome. Payment is milestone-based (50% upfront, 50% on delivery). Want a custom quote?",
+                    "Pricing depends on scope, but here are anchors: Single query optimization ~$180, Pipeline build ~$900-$2,500, Retainer ~custom. No hidden fees. Would you like to share your project details for an exact estimate?"
+                ]
+            },
+            experience: {
+                patterns: ['experience', 'background', 'who is', 'about prashant', 'resume', 'cv', 'work history', 'years', 'genpact', 'google', 'kwalee', 'ge', 'vernova', 'qualification'],
+                responses: [
+                    "Prashant is a Senior Data Engineer with 10+ years of experience. Currently at Genpact (client: GE Vernova), previously at Kwalee and Vaco Binary Semantics (client: Google). He holds an AWS Cloud Practitioner certification and a B.Tech in Mechanical Engineering. Want to see his full experience section?",
+                    "He's delivered results for Fortune 500 clients: 40% faster processing at Kwalee, 35% better decision accuracy for YouTube Ads at Google, and led ETL migrations to Enterprise Data Lake at GE Vernova. Pretty solid track record!"
+                ]
+            },
+            availability: {
+                patterns: ['available', 'when', 'start', 'timeline', 'how soon', 'urgent', 'fast', 'quick', 'book', 'schedule', 'call', 'meeting', 'timezone', 'remote'],
+                responses: [
+                    "Prashant typically starts within 24-48 hours. For urgent query fixes, sometimes same-day. He works remotely from Bengaluru, India (IST) but collaborates with US/UK/EU clients regularly. Want to send him a message to confirm current availability?",
+                    "He's available for remote work worldwide. Response time is under 24 hours. For real-time collaboration, he can align with EST mornings or GMT afternoons. Shall I help you fill out the contact form?"
+                ]
+            },
+            tech: {
+                patterns: ['tech', 'stack', 'tool', 'aws', 'postgresql', 'python', 'pyspark', 'databricks', 'airflow', 'terraform', 'tableau', 'power bi', 'sql', 'database', 'cloud', 'linux'],
+                responses: [
+                    "Prashant's core stack: AWS (EC2, S3, Lambda, Glue, Redshift, RDS, Athena, EMR, Step Functions), PostgreSQL, Python, PySpark, Databricks, Apache Airflow, Terraform, Tableau, Power BI, Flask/Django, Git, and Linux. Anything specific you want to know about?",
+                    "He specializes in the AWS + Python + PostgreSQL ecosystem. He does NOT work with Azure, Oracle, or frontend frameworks like React. If your stack aligns, he's your guy!"
+                ]
+            },
+            contact: {
+                patterns: ['contact', 'email', 'reach', 'talk', 'message', 'hire', 'work with', 'get in touch', 'phone', 'whatsapp', 'linkedin'],
+                responses: [
+                    "You can reach Prashant via: 1) The contact form on this page, 2) Email at prashantranjande@gmail.com, 3) LinkedIn at linkedin.com/in/prashantranjan131. He responds within 24 hours. Want me to help you draft your project brief?",
+                    "Best way: Fill out the contact form with your project type and budget. It goes straight to his inbox. Or email prashantranjande@gmail.com directly."
+                ]
+            },
+            process: {
+                patterns: ['process', 'how does it work', 'step', 'engage', 'contract', 'nda', 'milestone', 'revision', 'support'],
+                responses: [
+                    "Simple 4-step process: 1) You describe the problem, 2) Prashant sends a free estimate within 24hrs, 3) He fixes/builds it with daily updates, 4) You review and pay. Milestone-based payments (50/50). NDAs welcome. 2 weeks post-delivery support included for projects.",
+                    "For Query Fixes: Share query + schema → Get estimate → Pay → Receive optimized query + explanation. For Projects: Discovery → Proposal → Development → UAT → Delivery. Revisions included. Pretty straightforward!"
+                ]
+            },
+            fallback: {
+                responses: [
+                    "That's a great question! I'm Prashant's AI assistant with knowledge about his services, pricing, experience, and tech stack. Could you rephrase, or ask about: what services he offers, how much he charges, his past work, or how to hire him?",
+                    "I want to make sure I help you correctly. I can answer questions about: 1) Services & capabilities, 2) Pricing & budgets, 3) His experience at Google/GE/Kwalee, 4) Availability & process, 5) Tech stack. What would you like to know?",
+                    "Hmm, I don't have a specific answer for that in my knowledge base. For detailed technical discussions, I recommend filling out the contact form — Prashant personally reviews every message and will give you a precise answer within 24 hours!"
+                ]
+            }
+        };
+        
+        function toggleChat() {
+            isChatOpen = !isChatOpen;
+            chatWindow.classList.toggle('open', isChatOpen);
+            
+            if (isChatOpen) {
+                chatDot.style.display = 'none';
+                chatInput.focus();
+                if (chatMessages.children.length === 0) {
+                    setTimeout(() => addBotMessage(getRandomResponse('greetings')), 400);
+                }
+            }
+        }
+        
+        function addBotMessage(text, suggestions = []) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'chat-message bot';
+            msgDiv.innerHTML = `
+                <div class="avatar">AI</div>
+                <div>
+                    <div class="bubble">${text}</div>
+                    ${suggestions.length ? `
+                        <div class="suggestion-chips">
+                            ${suggestions.map(s => `<button class="suggestion-chip" onclick="sendQuickMessage('${s}')">${s}</button>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            saveChat();
+        }
+        
+        function addUserMessage(text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'chat-message user';
+            msgDiv.innerHTML = `
+                <div class="avatar">You</div>
+                <div class="bubble">${text}</div>
+            `;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            saveChat();
+        }
+        
+        function showTyping() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'chat-message bot typing-indicator-container';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="avatar">AI</div>
+                <div class="bubble">
+                    <div class="typing-indicator">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function hideTyping() {
+            const el = document.getElementById('typingIndicator');
+            if (el) el.remove();
+        }
+        
+        function getRandomResponse(category) {
+            const responses = knowledgeBase[category].responses;
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+        
+        function findIntent(text) {
+            const lower = text.toLowerCase();
+            for (const [category, data] of Object.entries(knowledgeBase)) {
+                if (category === 'fallback') continue;
+                if (data.patterns && data.patterns.some(p => lower.includes(p))) {
+                    return category;
+                }
+            }
+            return 'fallback';
+        }
+        
+        function sendChatMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+            
+            addUserMessage(text);
+            chatInput.value = '';
+            
+            showTyping();
+            
+            setTimeout(() => {
+                hideTyping();
+                const intent = findIntent(text);
+                const response = getRandomResponse(intent);
+                
+                let suggestions = [];
+                if (intent === 'greetings') {
+                    suggestions = ['What services do you offer?', 'How much do you charge?', 'Tell me about your experience'];
+                } else if (intent === 'services') {
+                    suggestions = ['What is your pricing?', 'How soon can you start?', 'What tech stack do you use?'];
+                } else if (intent === 'pricing') {
+                    suggestions = ['What is included?', 'How does payment work?', 'Can I see your experience?'];
+                }
+                
+                addBotMessage(response, suggestions);
+            }, 800 + Math.random() * 600);
+        }
+        
+        function sendQuickMessage(text) {
+            chatInput.value = text;
+            sendChatMessage();
+        }
+        
+        function handleChatKeypress(e) {
+            if (e.key === 'Enter') sendChatMessage();
+        }
+        
+        function saveChat() {
+            const html = chatMessages.innerHTML;
+            localStorage.setItem('prashant_chat_history', JSON.stringify(html));
+        }
+        
+        function loadChat() {
+            const saved = localStorage.getItem('prashant_chat_history');
+            if (saved) {
+                chatMessages.innerHTML = JSON.parse(saved);
+            }
+        }
+        
+        loadChat();
+        
+        setTimeout(() => {
+            if (!isChatOpen) chatDot.style.display = 'block';
+        }, 5000);
     </script>
 </body>
 </html>
