@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /Prashant_R_1D.pdf
+
+# Block common vulnerability scanners
+User-agent: sqlmap
+Disallow: /
+
+User-agent: nikto
+Disallow: /
+
+User-agent: nessus
+Disallow: /
+
+Sitemap: https://prashantranjan131.github.io/sitemap.xml
