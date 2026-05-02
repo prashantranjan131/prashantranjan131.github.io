@@ -11,6 +11,13 @@
     <meta property="og:title" content="Prashant Ranjan | Senior Data Engineer & AWS Cloud Specialist">
     <meta property="og:description" content="10+ years of experience in Data Analysis, AWS Cloud Solutions, and Software Engineering. Specializing in ETL/ELT pipelines, SQL optimization, and cloud infrastructure.">
     <meta property="og:type" content="website">
+
+    <!-- Security Headers via Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https:; frame-ancestors 'none'; upgrade-insecure-requests">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NCD67TKVE"></script>
@@ -1481,29 +1488,53 @@
         function addBotMessage(text, suggestions = []) {
             const msgDiv = document.createElement('div');
             msgDiv.className = 'chat-message bot';
-            msgDiv.innerHTML = `
-                <div class="avatar">AI</div>
-                <div>
-                    <div class="bubble">${text}</div>
-                    ${suggestions.length ? `
-                        <div class="suggestion-chips">
-                            ${suggestions.map(s => `<button class="suggestion-chip" onclick="sendQuickMessage('${s}')">${s}</button>`).join('')}
-                        </div>
-                    ` : ''}
-                </div>
-            `;
+
+            const avatar = document.createElement('div');
+            avatar.className = 'avatar';
+            avatar.textContent = 'AI';
+
+            const wrapper = document.createElement('div');
+
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            bubble.textContent = text; // safe: textContent never executes scripts
+
+            wrapper.appendChild(bubble);
+
+            if (suggestions.length) {
+                const chips = document.createElement('div');
+                chips.className = 'suggestion-chips';
+                suggestions.forEach(function(s) {
+                    const btn = document.createElement('button');
+                    btn.className = 'suggestion-chip';
+                    btn.textContent = s; // safe
+                    btn.addEventListener('click', function() { sendQuickMessage(s); });
+                    chips.appendChild(btn);
+                });
+                wrapper.appendChild(chips);
+            }
+
+            msgDiv.appendChild(avatar);
+            msgDiv.appendChild(wrapper);
             chatMessages.appendChild(msgDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
             saveChat();
         }
-        
+
         function addUserMessage(text) {
             const msgDiv = document.createElement('div');
             msgDiv.className = 'chat-message user';
-            msgDiv.innerHTML = `
-                <div class="avatar">You</div>
-                <div class="bubble">${text}</div>
-            `;
+
+            const avatar = document.createElement('div');
+            avatar.className = 'avatar';
+            avatar.textContent = 'You';
+
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            bubble.textContent = text; // safe: textContent never executes scripts
+
+            msgDiv.appendChild(avatar);
+            msgDiv.appendChild(bubble);
             chatMessages.appendChild(msgDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
             saveChat();
