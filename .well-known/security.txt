@@ -1,0 +1,4 @@
+Contact: mailto:prashantranjande@gmail.com
+Expires: 2027-05-02T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://prashantranjan131.github.io/.well-known/security.txt
